@@ -1,0 +1,109 @@
+.good-bg-img {
+  background-image: url('https://static01.nyt.com/images/2017/05/11/t-magazine/bookstore-slide-2MCD/bookstore-slide-2MCD-superJumbo.jpg');
+  background-position: center;
+  background-size: cover;
+  border-bottom: .25rem solid black;
+  border-top: .25rem solid black;
+}
+
+.book-image {
+  background-color: rgb(154, 131, 102);
+  border-radius: 5%;
+  border: .5rem solid black;
+  max-height: 50vh;
+  max-width: 50vw;
+  transition: all .2s ease;
+  animation: book-float 5s ease infinite;
+}
+
+.book-image:hover {
+  cursor: pointer;
+}
+
+.morello-image {
+  background-color: rgb(172, 137, 187);
+  border-radius: 5%;
+  border: .5rem solid rgb(32, 4, 34);
+  max-height: 50vh;
+  max-width: 50vw;
+  transition: all .2s ease;
+  animation: book-float 5s ease infinite;
+}
+
+.morello-image:hover {
+  cursor: pointer;
+}
+
+
+.status-bar {
+  position: fixed;
+  bottom: 0;
+  top: auto;
+  border-bottom: .25rem solid black;
+  border-top: .25rem solid black;
+}
+
+.font-good {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.font-evil {
+  font-family: 'Amatic SC', 'Courier New', Courier, monospace;
+}
+
+.evil-bg {
+  background-color: rgb(120, 85, 135);
+}
+
+.evil-card-bg {
+  background-color: rgb(172, 137, 187);
+}
+
+.fill-empty {
+  position: relative;
+  bottom: auto;
+}
+
+.yellow-bg {
+  background-color: rgb(213, 194, 72);
+}
+
+.evil-bg-img {
+  background-image: url('https://cutewallpaper.org/25/anime-half-evil-wallpaper/1734430480.jpg');
+  background-position: center;
+  background-size: cover;
+  border-bottom: .25rem solid rgb(32, 4, 34);
+  border-top: .25rem solid rgb(32, 4, 34);
+}
+
+.slight-border {
+  border: .15rem solid black;
+}
+
+.good-list:hover {
+  cursor: pointer;
+  border: .1rem solid black;
+  border-radius: 3%;
+  background-color: rgb(244, 224, 93);
+  padding: .2rem;
+}
+
+.bad-list:hover {
+  cursor: pointer;
+  border: .1rem solid rgb(32, 4, 34);
+  border-radius: 3%;
+  background-color: rgb(209, 183, 221);
+  padding: .2rem;
+}
+
+@keyframes book-float {
+
+  0%,
+  100% {
+    transform: translateY(-1rem);
+  }
+
+  50% {
+    transform: translateY(0rem);
+  }
+}
