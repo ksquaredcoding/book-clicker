@@ -101,6 +101,7 @@ function buyAutoMod(name) {
 function getMorellonomicon() {
   if (booksPerSec > 666 && morello.quantity <= 0 && manifest.quantity > 0) {
     morello.quantity++
+    booksPerSec += morello.booksPerInt
     alert('You have acquired the Morellonomicon... but at what cost?')
     drawMorello()
   }
